@@ -1,7 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-arr1 = np.array([1,2,3,4])
-arr2 = np.array([1,2,3,5])
-plt.plot(arr1)
+x = np.linspace(0,10,100)
+
+plt.plot(x, np.sin(x))
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('sin(x)')
 plt.show()
+

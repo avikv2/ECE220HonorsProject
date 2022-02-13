@@ -9,6 +9,9 @@ ticker = 'AAPL'
 while (ticker != 'q'):
     data = yf.download(ticker,'2016-01-01','2021-05-31', auto_adjust=True)
     data.Close.plot() 
+    plt.xlabel('Date')
+    plt.ylabel('Price ($)')
+    plt.title(ticker)
     plt.grid() 
-    plt.show()  
+    plt.show() 
     ticker = input("type in a a ticker name or q to quit: ")
